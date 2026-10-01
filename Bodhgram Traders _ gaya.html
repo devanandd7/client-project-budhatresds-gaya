@@ -1,0 +1,206 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bodhgram Traders | Indian merchant exporter of textiles</title>
+<meta name="description" content="Cotton and polyester fabric, yarn and denim from India. Export coordination, quality checks, documentation and shipment support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,700;1,6..72,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7ee;--card:#fff;--ink:#1a2540;--mute:#5b6580;--brand:#0b2a5b;--navy:#0b2a5b;--gold:#b8862b;--green:#3e9e57;--line:rgba(11,42,91,.14);--serif:'Newsreader',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1526;--card:#142240;--ink:#e9edf7;--mute:#a2adc7;--brand:#dbe6ff;--line:rgba(219,230,255,.16)}}
+:root[data-theme="dark"]{--bg:#0c1526;--card:#142240;--ink:#e9edf7;--mute:#a2adc7;--brand:#dbe6ff;--line:rgba(219,230,255,.16)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans);min-height:100%}
+h1,h2,h3{font-family:var(--serif);color:var(--brand);line-height:1.1;margin:0;font-weight:700}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+section{padding:84px 0}
+h2{font-size:clamp(30px,5vw,46px);margin-bottom:14px}
+.lead{max-width:60ch;color:var(--mute);margin:0 0 36px}
+.top{background:var(--navy);color:#e8eefc;font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;padding:8px 0;flex-wrap:wrap}
+.top a{text-decoration:none}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{font:700 22px var(--serif);color:var(--brand);text-decoration:none;white-space:nowrap}
+.logo span{color:var(--gold)}
+.nav nav{display:flex;gap:22px;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+.nav nav a{text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+.nav nav a:hover{border-color:var(--gold)}
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;padding:0}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 5%,transparent 75%)}
+.hero .wrap{position:relative;z-index:1;padding:110px 0 120px}
+.hero h1{color:#fff;font-size:clamp(40px,8vw,84px);max-width:11ch}
+.hero p{max-width:46ch;font-size:19px;color:#d5def2;margin:22px 0 32px}
+.btn{display:inline-block;border:0;border-radius:6px;padding:14px 24px;font:600 16px var(--sans);cursor:pointer;text-decoration:none;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn.gold{background:var(--gold);color:#fff}.btn.gold:hover{background:#cf9a37}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;margin-left:8px;background:transparent}
+.btn.solid{background:var(--navy);color:#fff}.btn.wa{background:#1f9d55;color:#fff}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.about p{font-size:20px;font-family:var(--serif);color:var(--brand);margin:0}
+.steps{list-style:none;margin:0;padding:0;border-left:2px solid var(--gold)}
+.steps li{padding:6px 0 6px 20px;position:relative}
+.steps li::before{content:"";position:absolute;left:-7px;top:16px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.prods{display:grid;gap:12px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.prod>button{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:16px;padding:20px 22px;cursor:pointer;font:700 24px var(--serif);color:var(--brand)}
+.prod>button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.prod .sw{width:38px;height:38px;border-radius:6px;flex:none}
+.prod .pl{margin-left:auto;font-size:26px;transition:transform .3s;color:var(--gold)}
+.prod.open .pl{transform:rotate(45deg)}
+.det{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.prod.open .det{grid-template-rows:1fr}
+.det>div{overflow:hidden}
+.det .in{padding:0 22px 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{background:color-mix(in srgb,var(--gold) 14%,transparent);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);border-radius:99px;padding:4px 13px;font-size:14px}
+.pack{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.pack div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;gap:12px;align-items:center}
+.pack i{width:10px;height:10px;background:var(--green);border-radius:2px;flex:none}
+.moq{background:var(--navy);color:#e8eefc}
+.moq h2,.moq .big{color:#fff}
+.moq .wrap{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.big{font:700 clamp(56px,11vw,120px) var(--serif);line-height:1;color:var(--gold)!important}
+.moq p{max-width:44ch;margin:0}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border-top:2px solid var(--brand)}
+.why div{padding:22px 20px 22px 0}
+.why h3{font-size:22px;margin-bottom:8px}
+.why p{margin:0;color:var(--mute);font-size:15px}
+.pay{display:grid;gap:22px}
+.pay .row{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}
+.pay .bar{display:flex;height:44px;border-radius:6px;overflow:hidden;background:var(--line)}
+.pay .bar span{display:flex;align-items:center;padding:0 12px;font-size:14px;font-weight:600;color:#fff;white-space:nowrap;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.pay .a{background:var(--gold)}.pay .b{background:var(--green)}
+.pay .t{font-weight:600}
+.form{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form label{display:grid;gap:6px;font-weight:600;font-size:15px}
+.form .full{grid-column:1/-1}
+.form input,.form select,.form textarea{font:400 16px var(--sans);padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);width:100%}
+.form .act{display:flex;gap:12px;flex-wrap:wrap}
+footer{background:var(--navy);color:#cbd6ef;padding:56px 0 40px}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+footer h3{color:#fff;font-size:24px;margin-bottom:10px}
+footer p{margin:4px 0}
+footer a.cl{display:inline-block;padding:8px 0;color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+footer a.cl:hover{color:var(--gold)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:760px){section{padding:60px 0}.about{grid-template-columns:1fr}.pay .row{grid-template-columns:1fr;gap:8px}.form{grid-template-columns:1fr;padding:20px}.btn.ghost{margin:10px 0 0}.hero .wrap{padding:80px 0 90px}.nav .wrap{gap:14px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>Manpur, Gaya, Bihar, India</span><span><a href="tel:+919835869521" target="_blank" rel="noopener">+91 9835869521</a> &nbsp;|&nbsp; <a href="mailto:trade2bodhgram@gmail.com?subject=Textile%20enquiry" target="_blank" rel="noopener">trade2bodhgram@gmail.com</a></span></div></div>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#top">Bodhgram <span>Traders</span></a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#products">Products</a><a href="#packaging">Packaging</a><a href="#moq">MOQ</a><a href="#payment">Payment</a><a href="#enquiry">Enquiry</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<canvas id="weave" aria-hidden="true"></canvas>
+<div class="wrap">
+<h1>Quality textiles, connecting India to the world</h1>
+<p>Cotton and polyester fabric, yarn and denim from an Indian merchant exporter. We handle sourcing, quality checks, documents and shipment.</p>
+<a class="btn gold" href="#enquiry">Send your requirement</a><a class="btn ghost" href="#products">See products</a>
+</div>
+</section>
+
+<section id="about"><div class="wrap about">
+<div class="rv"><h2>Who we are</h2><p>We build long-term business relationships rather than one-time transactions. Sourcing from India should be structured, transparent and convenient.</p></div>
+<ul class="steps rv">
+<li>Understanding the buyer's requirement</li><li>Supplier coordination</li><li>Quality checks</li><li>Documentation</li><li>Shipment support</li>
+</ul></div></section>
+
+<section id="products" style="padding-top:0"><div class="wrap">
+<h2>Products</h2><p class="lead">Select a product to see the specifications we need to quote it.</p>
+<div class="prods" id="prods"></div>
+</div></section>
+
+<section id="packaging" style="padding-top:0"><div class="wrap">
+<h2>Packaging options</h2><p class="lead">Buyer-branded and custom packaging is subject to feasibility.</p>
+<div class="pack" id="pack"></div>
+</div></section>
+
+<section class="moq" id="moq"><div class="wrap">
+<div class="big" id="moqn" data-to="35000">US$ 35,000</div>
+<div><h2>Starting order value</h2><p>For an initial business relationship we can start at around this level, because international textile shipments need to make commercial sense for both sides.</p></div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Why choose us</h2><p class="lead">One team from first enquiry to shipment.</p>
+<div class="why">
+<div class="rv"><h3>Long-term relationships</h3><p>We aim for repeat business, not one-off deals.</p></div>
+<div class="rv"><h3>Indian sourcing network</h3><p>Reliable suppliers coordinated for your order.</p></div>
+<div class="rv"><h3>Complete export coordination</h3><p>Documentation and shipment support included.</p></div>
+<div class="rv"><h3>Quality focus</h3><p>Quality checks as part of every order.</p></div>
+<div class="rv"><h3>One point of contact</h3><p>One person to talk to from start to finish.</p></div>
+</div></div></section>
+
+<section id="payment" style="padding-top:0"><div class="wrap">
+<h2>Payment terms</h2><p class="lead">Four options. Gold is paid in advance, green is the balance.</p>
+<div class="pay" id="pay"></div>
+</div></section>
+
+<section id="enquiry" style="padding-top:0"><div class="wrap">
+<h2>Your requirement</h2><p class="lead">Fill what you know. We will reply with a quotation.</p>
+<form class="form" id="f">
+<label>Product<select id="fp"></select></label>
+<label>Quantity required<input id="fq" placeholder="e.g. 20,000 metres"></label>
+<label class="full">Specifications (GSM, count, composition)<textarea id="fs" rows="3"></textarea></label>
+<label>Destination country and port<input id="fd"></label>
+<label>Packaging preference<select id="fk"></select></label>
+<label class="full">Target price or current buying price<input id="ft"></label>
+<div class="full act"><a class="btn wa" id="wa" href="https://wa.me/919835869521" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn solid" id="em" href="mailto:trade2bodhgram@gmail.com" target="_blank" rel="noopener">Send by email</a></div>
+</form></div></section>
+</main>
+
+<footer><div class="wrap">
+<div><h3>Bodhgram Traders</h3><p>Indian merchant exporter, textile products</p></div>
+<div><h3>Let's talk</h3><p>Manpur, Gaya, Bihar 823003, India</p><p><a class="cl" href="tel:+919835869521" target="_blank" rel="noopener">+91 9835869521</a></p><p><a class="cl" href="mailto:trade2bodhgram@gmail.com?subject=Textile%20enquiry" target="_blank" rel="noopener">trade2bodhgram@gmail.com</a></p><p>www.Bodhgramtraders.com</p></div>
+</div></footer>
+
+<script>
+const P=[
+["Cotton fabric","#c9b79c",["GSM","Width","Weave and construction","Dyed","Printed","Unfinished"]],
+["Cotton yarn","#e6dcc8",["Yarn count","Carded","Combed","Ring-spun","Single or multiple ply","Raw / greige","Dyed"]],
+["Polyester fabric","#7f9bc4",["GSM","Width","Composition","Finish","Color","Application / end use"]],
+["Polyester yarn","#4d6fa8",["Yarn type","Denier / count","Filament","Color","Finish","End-use requirements"]],
+["Denim fabric","#14336b",["GSM","Width","Composition","Stretch / non-stretch","Weave","Color","Wash requirements"]]];
+const K=["Standard export rolls","Individual roll wrapping","Polybag protection","Waterproof outer protection","Woven / PP packaging","Carton packaging where suitable","Palletized packing where required","Buyer-branded / custom packaging"];
+const Y=[["100% advance",100,0,""],["30% advance, 70% on loading",30,70,"before dispatch"],["40% advance, 60% on scan BL",40,60,"on scan BL"],["40% advance, 60% bank to bank",40,60,"bank to bank"]];
+const $=s=>document.querySelector(s);
+$('#prods').innerHTML=P.map((p,i)=>`<div class="prod"><button aria-expanded="false" aria-controls="d${i}"><span class="sw" style="background:${p[1]}"></span>${p[0]}<span class="pl" aria-hidden="true">+</span></button><div class="det" id="d${i}"><div><div class="in"><div class="chips">${p[2].map(c=>`<span class="chip">${c}</span>`).join('')}</div><button class="btn solid" data-p="${i}">Enquire about ${p[0].toLowerCase()}</button></div></div></div></div>`).join('');
+$('#pack').innerHTML=K.map(k=>`<div class="rv"><i></i>${k}</div>`).join('');
+$('#pay').innerHTML=Y.map(y=>`<div class="row rv"><div class="t">${y[0]}</div><div class="bar"><span class="a" data-w="${y[1]}">${y[1]}%</span>${y[2]?`<span class="b" data-w="${y[2]}">${y[2]}% ${y[3]}</span>`:''}</div></div>`).join('');
+$('#fp').innerHTML=P.map(p=>`<option>${p[0]}</option>`).join('');
+$('#fk').innerHTML='<option>No preference</option>'+K.map(k=>`<option>${k}</option>`).join('');
+document.querySelectorAll('.prod>button').forEach(b=>b.onclick=()=>{const o=b.parentElement.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{$('#fp').selectedIndex=+b.dataset.p;$('#enquiry').scrollIntoView();$('#fs').focus({preventScroll:true})});
+const msg=()=>`Hello Bodhgram Traders, my requirement:\n1. Product: ${$('#fp').value}\n2. Specifications: ${$('#fs').value||'-'}\n3. Quantity: ${$('#fq').value||'-'}\n4. Destination and port: ${$('#fd').value||'-'}\n5. Packaging: ${$('#fk').value}\n6. Target price: ${$('#ft').value||'-'}`;
+const upd=()=>{$('#wa').href='https://wa.me/919835869521?text='+encodeURIComponent(msg());$('#em').href='mailto:trade2bodhgram@gmail.com?subject='+encodeURIComponent('Textile requirement: '+$('#fp').value)+'&body='+encodeURIComponent(msg())};
+$('#f').addEventListener('input',upd);$('#f').addEventListener('change',upd);$('#f').onsubmit=e=>e.preventDefault();
+['#wa','#em'].forEach(s=>$(s).addEventListener('click',upd));
+upd();
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;io.unobserve(t);t.classList.add('in');
+t.querySelectorAll('[data-w]').forEach((s,i)=>setTimeout(()=>s.style.width=s.dataset.w+'%',i*250));
+if(t.id==='moqn'){const to=35000,st=performance.now();(function f(n){const k=rm?1:Math.min(1,(n-st)/1400);t.textContent='US$ '+Math.round(to*(1-Math.pow(1-k,3))).toLocaleString('en-US');if(k<1)requestAnimationFrame(f)})(st)}}),{threshold:.25});
+document.querySelectorAll('.rv,#moqn').forEach(el=>io.observe(el));
+const cv=$('#weave'),cx=cv.getContext('2d'),S=16,T=6;let W,H;
+function size(){const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}
+function draw(t){cx.clearRect(0,0,W,H);const c=Math.ceil(W/S),r=Math.ceil(H/S),p=rm?1:Math.min(1,t/2800),vis=Math.floor(c*p);
+for(let i=0;i<vis;i++)for(let j=0;j<r;j++){const sh=.55+.45*Math.sin(i*.22-j*.1-t*.0018),x=i*S,y=j*S;
+if((i+j)%2){cx.fillStyle=`rgba(200,150,50,${sh})`;cx.fillRect(x+(S-T)/2,y,T,S-1)}else{cx.fillStyle=`rgba(140,175,235,${sh*.85})`;cx.fillRect(x,y+(S-T)/2,S-1,T)}}}
+size();addEventListener('resize',()=>{size();if(rm)draw(0)});
+if(rm)draw(0);else{const s=performance.now();(function l(n){draw(n-s);requestAnimationFrame(l)})(s)}
+</script>
+</body>
+</html>
