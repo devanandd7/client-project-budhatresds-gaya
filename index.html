@@ -61,9 +61,6 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backgroun
 .det .in{padding:0 22px 22px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
 .chip{background:color-mix(in srgb,var(--gold) 14%,transparent);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);border-radius:99px;padding:4px 13px;font-size:14px}
-.pack{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
-.pack div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;gap:12px;align-items:center}
-.pack i{width:10px;height:10px;background:var(--green);border-radius:2px;flex:none}
 .moq{background:var(--navy);color:#e8eefc}
 .moq h2,.moq .big{color:#fff}
 .moq .wrap{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
@@ -73,12 +70,6 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backgroun
 .why div{padding:22px 20px 22px 0}
 .why h3{font-size:22px;margin-bottom:8px}
 .why p{margin:0;color:var(--mute);font-size:15px}
-.pay{display:grid;gap:22px}
-.pay .row{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}
-.pay .bar{display:flex;height:44px;border-radius:6px;overflow:hidden;background:var(--line)}
-.pay .bar span{display:flex;align-items:center;padding:0 12px;font-size:14px;font-weight:600;color:#fff;white-space:nowrap;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
-.pay .a{background:var(--gold)}.pay .b{background:var(--green)}
-.pay .t{font-weight:600}
 .form{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .form label{display:grid;gap:6px;font-weight:600;font-size:15px}
 .form .full{grid-column:1/-1}
@@ -92,7 +83,7 @@ footer a.cl{display:inline-block;padding:8px 0;color:#fff;font-weight:600;text-d
 footer a.cl:hover{color:var(--gold)}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
 .rv.in{opacity:1;transform:none}
-@media (max-width:760px){section{padding:60px 0}.about{grid-template-columns:1fr}.pay .row{grid-template-columns:1fr;gap:8px}.form{grid-template-columns:1fr;padding:20px}.btn.ghost{margin:10px 0 0}.hero .wrap{padding:80px 0 90px}.nav .wrap{gap:14px}}
+@media (max-width:760px){section{padding:60px 0}.about{grid-template-columns:1fr}.form{grid-template-columns:1fr;padding:20px}.btn.ghost{margin:10px 0 0}.hero .wrap{padding:80px 0 90px}.nav .wrap{gap:14px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -100,7 +91,7 @@ footer a.cl:hover{color:var(--gold)}
 <div class="top"><div class="wrap"><span>Manpur, Gaya, Bihar, India</span><span><a href="tel:+919835869521" target="_blank" rel="noopener">+91 9835869521</a> &nbsp;|&nbsp; <a href="mailto:trade2bodhgram@gmail.com?subject=Textile%20enquiry" target="_blank" rel="noopener">trade2bodhgram@gmail.com</a></span></div></div>
 <header class="nav"><div class="wrap">
 <a class="logo" href="#top">Bodhgram <span>Traders</span></a>
-<nav aria-label="Main"><a href="#about">About</a><a href="#products">Products</a><a href="#packaging">Packaging</a><a href="#moq">MOQ</a><a href="#payment">Payment</a><a href="#enquiry">Enquiry</a></nav>
+<nav aria-label="Main"><a href="#about">About</a><a href="#products">Products</a><a href="#moq">MOQ</a><a href="#enquiry">Enquiry</a></nav>
 </div></header>
 
 <main id="top">
@@ -121,15 +112,10 @@ footer a.cl:hover{color:var(--gold)}
 <div class="prods" id="prods"></div>
 </div></section>
 
-<!-- <section id="packaging" style="padding-top:0"><div class="wrap">
-<h2>Packaging options</h2><p class="lead">Buyer-branded and custom packaging is subject to feasibility.</p>
-<div class="pack" id="pack"></div>
-</div></section> -->
-
-<!-- <section class="moq" id="moq"><div class="wrap">
+<section class="moq" id="moq"><div class="wrap">
 <div class="big" id="moqn" data-to="35000">US$ 35,000</div>
-<div><h2>Starting order value</h2><p>For an initial business relationship we can start at around this level, because international textile shipments need to make commercial sense for both sides.</p></div>
-</div></section> -->
+<div><h2>Your Trust, Our Products.</h2></div>
+</div></section>
 
 <section><div class="wrap">
 <h2>Why choose us</h2><p class="lead">One team from first enquiry to shipment.</p>
@@ -140,11 +126,6 @@ footer a.cl:hover{color:var(--gold)}
 <div class="rv"><h3>Quality focus</h3><p>Quality checks as part of every order.</p></div>
 <div class="rv"><h3>One point of contact</h3><p>One person to talk to from start to finish.</p></div>
 </div></div></section>
-
-<!-- <section id="payment" style="padding-top:0"><div class="wrap">
-<h2>Payment terms</h2><p class="lead">Four options. Gold is paid in advance, green is the balance.</p>
-<div class="pay" id="pay"></div>
-</div></section> -->
 
 <section id="enquiry" style="padding-top:0"><div class="wrap">
 <h2>Your requirement</h2><p class="lead">Fill what you know. We will reply with a quotation.</p>
@@ -172,11 +153,8 @@ const P=[
 ["Polyester yarn","#4d6fa8",["Yarn type","Denier / count","Filament","Color","Finish","End-use requirements"]],
 ["Denim fabric","#14336b",["GSM","Width","Composition","Stretch / non-stretch","Weave","Color","Wash requirements"]]];
 const K=["Standard export rolls","Individual roll wrapping","Polybag protection","Waterproof outer protection","Woven / PP packaging","Carton packaging where suitable","Palletized packing where required","Buyer-branded / custom packaging"];
-const Y=[["100% advance",100,0,""],["30% advance, 70% on loading",30,70,"before dispatch"],["40% advance, 60% on scan BL",40,60,"on scan BL"],["40% advance, 60% bank to bank",40,60,"bank to bank"]];
 const $=s=>document.querySelector(s);
 $('#prods').innerHTML=P.map((p,i)=>`<div class="prod"><button aria-expanded="false" aria-controls="d${i}"><span class="sw" style="background:${p[1]}"></span>${p[0]}<span class="pl" aria-hidden="true">+</span></button><div class="det" id="d${i}"><div><div class="in"><div class="chips">${p[2].map(c=>`<span class="chip">${c}</span>`).join('')}</div><button class="btn solid" data-p="${i}">Enquire about ${p[0].toLowerCase()}</button></div></div></div></div>`).join('');
-$('#pack').innerHTML=K.map(k=>`<div class="rv"><i></i>${k}</div>`).join('');
-$('#pay').innerHTML=Y.map(y=>`<div class="row rv"><div class="t">${y[0]}</div><div class="bar"><span class="a" data-w="${y[1]}">${y[1]}%</span>${y[2]?`<span class="b" data-w="${y[2]}">${y[2]}% ${y[3]}</span>`:''}</div></div>`).join('');
 $('#fp').innerHTML=P.map(p=>`<option>${p[0]}</option>`).join('');
 $('#fk').innerHTML='<option>No preference</option>'+K.map(k=>`<option>${k}</option>`).join('');
 document.querySelectorAll('.prod>button').forEach(b=>b.onclick=()=>{const o=b.parentElement.classList.toggle('open');b.setAttribute('aria-expanded',o)});
@@ -188,7 +166,6 @@ $('#f').addEventListener('input',upd);$('#f').addEventListener('change',upd);$('
 upd();
 const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;io.unobserve(t);t.classList.add('in');
-t.querySelectorAll('[data-w]').forEach((s,i)=>setTimeout(()=>s.style.width=s.dataset.w+'%',i*250));
 if(t.id==='moqn'){const to=35000,st=performance.now();(function f(n){const k=rm?1:Math.min(1,(n-st)/1400);t.textContent='US$ '+Math.round(to*(1-Math.pow(1-k,3))).toLocaleString('en-US');if(k<1)requestAnimationFrame(f)})(st)}}),{threshold:.25});
 document.querySelectorAll('.rv,#moqn').forEach(el=>io.observe(el));
 const cv=$('#weave'),cx=cv.getContext('2d'),S=16,T=6;let W,H;
